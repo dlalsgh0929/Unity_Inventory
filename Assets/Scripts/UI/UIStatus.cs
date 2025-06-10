@@ -10,11 +10,11 @@ public class UIStatus : MonoBehaviour
     public TextMeshProUGUI defText;
     public TextMeshProUGUI hpText;
 
-    public void SetCharacterStatus()
+    public void SetCharacterStatus(Character character)
     {
-        attText.text = GameManager.Instance.Character.Att.ToString();
-        defText.text = GameManager.Instance.Character.Def.ToString();
-        hpText.text = GameManager.Instance.Character.HP.ToString();
+        attText.text = character.Att.ToString();
+        defText.text = character.Def.ToString();
+        hpText.text = character.HP.ToString();
     }
 
     public void GoMainMenu()

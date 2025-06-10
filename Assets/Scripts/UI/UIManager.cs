@@ -50,8 +50,7 @@ public class UIManager : MonoBehaviour
     
     private void Start()
     {
-        _mainMenu.SetCharacterInfo();
-        _status.SetCharacterStatus();
+        
     }
 
     

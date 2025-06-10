@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
 
 public class UIMainMenu : MonoBehaviour
@@ -15,11 +16,11 @@ public class UIMainMenu : MonoBehaviour
 
 
 
-    public void SetCharacterInfo()
+    public void SetCharacterInfo(Character character)
     {
-        jobText.text = GameManager.Instance.Character.job;
-        nameText.text = GameManager.Instance.Character.name;
-        levelText.text = $"Lv. {GameManager.Instance.Character.level}";
+        jobText.text = character.Job;
+        nameText.text = character.NickName;
+        levelText.text = $"Lv. {character.Level}";
     }
 
 

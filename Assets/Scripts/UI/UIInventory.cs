@@ -16,8 +16,10 @@ public class UIInventory : MonoBehaviour
         
     }
 
-    void GoMainMenu()
+    public void GoMainMenu()
     {
-
+        gameObject.SetActive(false);
+        UIManager.Instance.MainMenu.statusButton.gameObject.SetActive(true);
+        UIManager.Instance.MainMenu.inventoryButton.gameObject.SetActive(true);
     }
 }
