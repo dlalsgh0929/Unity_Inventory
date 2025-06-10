@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+        //UI에 스탯 할당하여 출력
         UIManager.Instance.MainMenu.SetCharacterInfo(_character);
         UIManager.Instance.Status.SetCharacterStatus(_character);
     }
