@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca41ac38aa84b64caa411a7330118f2, type: 3}
+  m_Name: Pants
+  m_EditorClassIdentifier: 
+  itemName: Nomal Pants
+  itemType: 2
+  itemImage: {fileID: 21300000, guid: 8122a8e89b574564ea0f401a3eddc7c5, type: 3}
+  attack: 0
+  defend: 10
+  isEquip: 0

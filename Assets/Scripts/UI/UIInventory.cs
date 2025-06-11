@@ -1,19 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class UIInventory : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public List<Item> items;
+
+    [SerializeField] UISlot _uiSlot;
+    [SerializeField] Transform slotParants;
+    [SerializeField] List<UISlot> slots;
+
+    private void Start()
     {
-        
+        InitInventoryUI();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void InitInventoryUI()
     {
-        
+        slots = new List<UISlot>(slotParants.GetComponentsInChildren<UISlot>());
     }
 
     public void GoMainMenu()
@@ -22,4 +27,5 @@ public class UIInventory : MonoBehaviour
         UIManager.Instance.MainMenu.statusButton.gameObject.SetActive(true);
         UIManager.Instance.MainMenu.inventoryButton.gameObject.SetActive(true);
     }
+
 }
