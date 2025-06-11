@@ -19,6 +19,16 @@ public class UIInventory : MonoBehaviour
     public void InitInventoryUI()
     {
         slots = new List<UISlot>(slotParants.GetComponentsInChildren<UISlot>());
+        
+        for(int i = 0; i < slots.Count && i< items.Count; i++)
+        {
+            slots[i].Item = items[i];
+        }
+
+        for(int i = items.Count; i < slots.Count; i++)
+        {
+            slots[i].Item = null;
+        }
     }
 
     public void GoMainMenu()

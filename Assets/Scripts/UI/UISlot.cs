@@ -29,8 +29,9 @@ public class UISlot : MonoBehaviour
 
     public void ItemEquip()
     {
+        if (item == null) return;
         isEquiped.SetActive(!isEquiped.activeSelf);
         item.isEquip = !item.isEquip;
-        
+        GameManager.Instance.SetEquipItemStats(item);
     }
 }

@@ -59,7 +59,21 @@ public class GameManager : MonoBehaviour
         _character.HP = 50;
     }
 
-    
+    public void SetEquipItemStats(Item item)
+    {
+        if(item.isEquip == true)
+        {
+            _character.Att += item.attack;
+            _character.Def += item.defend;
+        }
+        else
+        {
+            _character.Att -= item.attack;
+            _character.Def -= item.defend;
+        }
+
+        UIManager.Instance.Status.SetCharacterStatus(_character);
+    }
 
 
 }
