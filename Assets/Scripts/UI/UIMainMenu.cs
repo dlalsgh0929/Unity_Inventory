@@ -15,16 +15,13 @@ public class UIMainMenu : MonoBehaviour
     public TextMeshProUGUI levelText;
 
 
-
+    // 캐릭터의 정보를 출력
     public void SetCharacterInfo(Character character)
     {
         jobText.text = character.Job;
         nameText.text = character.NickName;
         levelText.text = $"Lv. {character.Level}";
     }
-
-
-
 
     public void OpenStatusUI()
     {

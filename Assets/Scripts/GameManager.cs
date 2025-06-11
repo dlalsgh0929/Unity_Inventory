@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+        //하이라키창에서 캐릭터를 찾아 할당
         GameObject character = GameObject.Find("Character");
         _character = character.GetComponent<Character>();
 
@@ -59,6 +60,7 @@ public class GameManager : MonoBehaviour
         _character.HP = 50;
     }
 
+    // 아이템이 장착 되었을 때 캐릭터의 스탯 재설정 및 출력
     public void SetEquipItemStats(Item item)
     {
         if(item.isEquip == true)

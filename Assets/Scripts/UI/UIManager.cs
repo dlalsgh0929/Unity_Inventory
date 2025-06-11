@@ -45,19 +45,5 @@ public class UIManager : MonoBehaviour
         _status = GetComponentInChildren<UIStatus>(true);
         _inventory = GetComponentInChildren<UIInventory>(true);
 
-    }
-
-    
-    private void Start()
-    {
-        
-    }
-
-    
-    void Update()
-    {
-        
-    }
-
-    
+    } 
 }

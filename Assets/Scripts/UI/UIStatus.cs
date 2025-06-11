@@ -10,6 +10,7 @@ public class UIStatus : MonoBehaviour
     public TextMeshProUGUI defText;
     public TextMeshProUGUI hpText;
 
+    // 캐릭터의 스탯을 출력
     public void SetCharacterStatus(Character character)
     {
         attText.text = character.Att.ToString();
